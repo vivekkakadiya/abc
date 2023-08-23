@@ -29,7 +29,7 @@ const Singup = () => {
     newForm.append("name", name);
     newForm.append("email", email);
     newForm.append("password", password);
-
+    console.log(newForm);
     axios
       .post(`${server}/user/create-user`, newForm, config)
       .then((res) => {
